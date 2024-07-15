@@ -9,6 +9,7 @@ vim.wo.relativenumber = true
 -- Update tab stop and shiftwidth
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
 
 -- Set virtual edit to block mode only
 vim.opt.virtualedit = "block"
