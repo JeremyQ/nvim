@@ -1,6 +1,10 @@
 -- See `:help vim.o`
+
+-- fix slow python start
+vim.g.python3_host_prog = "/Users/jeremyquesada/.pyenv/shims/python3"
+
 -- Set highlight on search
-vim.o.hlsearch = false
+vim.o.hlsearch = true
 
 -- Make line numbers default
 vim.wo.number = true
