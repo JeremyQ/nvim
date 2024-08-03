@@ -25,7 +25,7 @@ return {
 		-- Customize formatters
 		formatters = {
 			black = {
-				prepend_args = { "--line-length", "120" },
+				prepend_args = { "--line-length", "140" },
 			},
 		},
 	},

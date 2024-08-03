@@ -4,7 +4,7 @@
 vim.g.python3_host_prog = "/Users/jeremyquesada/.pyenv/shims/python3"
 
 -- Set highlight on search
-vim.o.hlsearch = true
+vim.o.hlsearch = false
 
 -- Make line numbers default
 vim.wo.number = true
