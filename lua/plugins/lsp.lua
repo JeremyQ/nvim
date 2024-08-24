@@ -35,7 +35,7 @@ return {
 		{ "Bilal2453/luvit-meta", lazy = true },
 	},
 	config = function()
-		require("mason-lspconfig").setup()
+		require("mason-lspconfig").setup({ ensure_installed = { "lua_ls", "pyright" }, })
 		require("mason-lspconfig").setup_handlers({
 			function(server_name)
 				require("lspconfig")[server_name].setup({})
