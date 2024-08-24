@@ -41,6 +41,22 @@ return {
 				require("lspconfig")[server_name].setup({})
 			end,
 		})
+		require("lspconfig").pyright.setup({
+			on_attach = on_attach,
+			settings = {
+				pyright = {
+					autoImportCompletion = true,
+				},
+				python = {
+					analysis = {
+						autoSearchPaths = true,
+						diagnosticMode = 'openFilesOnly',
+						useLibraryCodeForTypes = true,
+						typeCheckingMode = 'off'
+					}
+				}
+			}
+		})
 		vim.api.nvim_create_autocmd("LspAttach", {
 			callback = function()
 				local builtin = require "telescope.builtin"
