@@ -18,6 +18,7 @@ vim.keymap.set("n", "<space>sh", builtin.help_tags)
 vim.keymap.set("n", "<space>sg", builtin.live_grep)
 vim.keymap.set("n", "<space>/", builtin.current_buffer_fuzzy_find)
 vim.keymap.set("n", "<space>sw", builtin.grep_string)
+vim.keymap.set("n", "<space>td", builtin.diagnostics)
 vim.keymap.set("n", "<leader>b", function()
 	builtin.buffers({
 		sort_mru = true,
