@@ -15,7 +15,8 @@ return {
 			opts = {
 				options = {
 					icons_enabled = false,
-					theme = "tokyonight-night",
+					-- theme = "tokyonight-night",
+					theme = "tokyodark",
 					component_separators = "|",
 					section_separators = "",
 				},
