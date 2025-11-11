@@ -37,3 +37,6 @@ vim.o.clipboard = "unnamedplus"
 
 -- Enable mouse mode
 vim.o.mouse = "a"
+
+-- fix slow python start
+vim.g.python3_host_prog = "/Users/jeremyquesada/.pyenv/shims/python3"
