@@ -28,10 +28,6 @@ require("lazy").setup({
     -- end,
     -- },
     {
-      checker = {
-        enabled = false, -- automatically check for plugin updates
-        notify = false,  -- get a notification when new updates are found
-      },
       "nvim-treesitter/nvim-treesitter",
       branch = "master",
       lazy = false,
@@ -69,5 +65,5 @@ require("lazy").setup({
   -- install = { colorscheme = { "gruvbox-material" } },
   install = { colorscheme = { "kanagawa-dragon" } },
   -- automatically check for plugin updates
-  checker = { enabled = true },
+  checker = { enabled = true, notify = false, },
 })
